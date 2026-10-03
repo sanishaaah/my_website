@@ -1,0 +1,282 @@
+/* Remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fb;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* Navigation Bar */
+nav {
+    background-color: #111827;
+
+    padding: 18px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+}
+
+
+/* Name in Navbar */
+nav h2 {
+    color: #60a5fa;
+}
+
+
+/* Navigation Links */
+nav ul {
+    display: flex;
+
+    list-style: none;
+
+    gap: 25px;
+}
+
+
+nav ul li a {
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+nav ul li a:hover {
+    color: #60a5fa;
+}
+
+
+/* Home Section */
+.hero {
+    min-height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #dbeafe,
+        #eff6ff
+    );
+
+    padding: 40px 20px;
+}
+
+
+/* Main Heading */
+.hero h1 {
+    font-size: 55px;
+
+    color: #111827;
+
+    margin-bottom: 10px;
+}
+
+
+/* Highlight Name */
+.hero h1 span {
+    color: #2563eb;
+}
+
+
+/* Hero Paragraph */
+.hero p {
+    font-size: 22px;
+
+    color: #4b5563;
+
+    margin-bottom: 25px;
+}
+
+
+/* Button */
+.btn {
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+}
+
+
+.btn:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* All Sections */
+section {
+    padding: 70px 10%;
+}
+
+
+/* Section Headings */
+section h2 {
+    text-align: center;
+
+    font-size: 35px;
+
+    margin-bottom: 35px;
+
+    color: #111827;
+}
+
+
+/* About Section */
+.about {
+    max-width: 800px;
+
+    margin: auto;
+
+    text-align: center;
+
+    font-size: 18px;
+
+    color: #4b5563;
+}
+
+
+/* Skills */
+.skills-container {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+
+/* Skill Cards */
+.skill {
+    background-color: white;
+
+    padding: 25px 50px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    color: #2563eb;
+}
+
+
+.skill:hover {
+    transform: translateY(-5px);
+
+    transition: 0.3s;
+}
+
+
+/* Education */
+.education {
+    max-width: 700px;
+
+    margin: auto;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+    text-align: center;
+}
+
+
+.education h3 {
+    color: #2563eb;
+
+    margin-bottom: 10px;
+}
+
+
+/* Contact */
+.contact {
+    text-align: center;
+}
+
+
+.contact p {
+    font-size: 18px;
+
+    margin: 10px;
+}
+
+
+/* Footer */
+footer {
+    background-color: #111827;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+
+/* Mobile Screen */
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    nav ul {
+        gap: 12px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+
+    .hero p {
+        font-size: 18px;
+    }
+
+}
